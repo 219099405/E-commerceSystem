@@ -1,4 +1,4 @@
-package za.ac.cput.repository.impl;
+package za.ac.cput.repository;
 
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class ProductRepositoryTest {
-    private static ProductRepository repository = ProductRepository.getRepository();
+    private static za.ac.cput.repository.impl.ProductRepository repository = za.ac.cput.repository.impl.ProductRepository.getRepository();
     private static Product product = ProductFactory.createProduct("iPhone 15", 18000.00);
 
     @Test
