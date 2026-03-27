@@ -1,14 +1,14 @@
+/*
+ * OrderFactory.java
+ * Pertunia Sifunda (221692568)
+ */
+
 package za.ac.cput.factory;
 
 import za.ac.cput.domain.Order;
 import za.ac.cput.util.Helper;
 
 import java.time.LocalDate;
-
-/*
- * OrderFactory.java
- * Pertunia Sifunda (221692568)
- */
 
 public class OrderFactory {
 
