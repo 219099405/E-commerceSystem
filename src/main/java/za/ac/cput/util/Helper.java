@@ -11,15 +11,11 @@ import za.ac.cput.util.Helper;
 import java.util.UUID;
 
 public class Helper {
-    public static boolean isNullOrEmpty(String a) {
-        if (a.isEmpty() || a == null)
-
-            return true;
-        return false;
+    public static boolean isNullOrEmpty(String str) {
+        return str == null || str.isEmpty();
     }
 
     public static String generateId() {
         return UUID.randomUUID().toString();
     }
-
 }
