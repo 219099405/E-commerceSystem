@@ -1,10 +1,14 @@
 package za.ac.cput.util;
 
-public class Helper {
-    public static boolean isNullOrEmpty(String a) {
-        if(a.isEmpty() || a==null)
+import java.util.UUID;
 
-            return true;
-        return false;
+public class Helper {
+
+    public static boolean isNullOrEmpty(String str) {
+        return str == null || str.isEmpty();
+    }
+
+    public static String generateId() {
+        return UUID.randomUUID().toString();
     }
 }
