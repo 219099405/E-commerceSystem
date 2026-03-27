@@ -1,10 +1,21 @@
 package za.ac.cput.util;
 
-public class Helper {
-    public static boolean isNullOrEmpty(String a) {
-        if(a.isEmpty() || a==null)
+/*
+User Factory Helper Class
+Author: Aneeqah Talaaboedien (219099405)
+Date March 2026
+ */
 
-            return true;
-        return false;
+
+import za.ac.cput.util.Helper;
+import java.util.UUID;
+
+public class Helper {
+    public static boolean isNullOrEmpty(String str) {
+        return str == null || str.isEmpty();
+    }
+
+    public static String generateId() {
+        return UUID.randomUUID().toString();
     }
 }
